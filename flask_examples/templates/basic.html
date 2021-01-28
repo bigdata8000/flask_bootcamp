@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+    <h1>Welcome to the site</h1>
+    <h2>Here is a pic of a puppy!</h2>
+    <img src="../static/husky.jpg" alt="dog husky">
+    <br>
+    <hr>
+
+    <p>
+        Hi: {{ z }} <br>
+        I like: {{ y }} <br>
+        Also love: {{ car_dict['make'] }}, especially {{ car_dict['model'] }}
+    </p>
+
+{% endblock %}    

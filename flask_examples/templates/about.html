@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>This is the about page</h1>
+
+<ul>
+    {% for item in mylist %}
+    <li>
+        {{ item }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% if 'Toyota' in mylist %}
+    <p>Found you Toyota!</p>
+{% else %}
+    <p>Hmmm. no Toyota? Are you sure?</p>
+{% endif %}
+
+{% endblock %}
